@@ -3,3 +3,24 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.courses_card {
+  box-shadow: 0px 10px 15px rgba(8, 14, 28, 0.06);
+}
+
+.courses_card_img {
+  width: 100%;
+  overflow: hidden;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.courses_card_img img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.courses_card_img img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
