@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --blue: #0a2240;
+  --btn_bg_color: #e31836;
+}
+
 h1 {
   font-weight: 700;
   font-size: 50px;
@@ -139,7 +144,56 @@ section .btn button {
   font-size: 20px;
 }
 
-:root {
-  --blue: #0a2240;
-  --btn_bg_color: #e31836;
+@media only screen and (max-width: 1001px) {
+  #courses_sect .card_body .courses_card_content {
+    padding: 15px 10px;
+  }
+  #courses_sect .card_body .courses_card_content .card_title h3 {
+    font-size: 15px;
+  }
+  #courses_sect .card_body .courses_card_content .card_desc p {
+    font-size: 12px;
+  }
+}
+.swiper {
+  width: 100%;
+  box-shadow: 0px 10px 15px rgba(8, 14, 28, 0.06);
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 10px 15px rgba(8, 14, 28, 0.06);
+}
+
+.slide_img {
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.swiper-slide img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#slider_sect .tutor_info {
+  text-align: center;
+  padding: 16px;
+}
+#slider_sect .tutor_info .tutor_name h5 {
+  font-weight: 600;
+  color: #1b1d1f;
+  line-height: 28px;
+  font-size: 20px;
+}
+#slider_sect .tutor_info .tutor_branch p {
+  font-size: 15px;
+  font-weight: 200;
+  color: #0d223f;
 }

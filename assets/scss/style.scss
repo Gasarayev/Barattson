@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+
+:root {
+    --blue: #0a2240;
+    --btn_bg_color: #e31836;
+  }
+  
+
 h1 {
     font-weight: 700;
     font-size: 50px;
@@ -42,9 +49,8 @@ section {
   }
 }
 
+@import "./bannerSection";
+@import "./popularCategories.scss";
 @import "./courses";
+@import "./swiper_slider";
 
-:root {
-  --blue: #0a2240;
-  --btn_bg_color: #e31836;
-}
