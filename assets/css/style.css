@@ -4,20 +4,142 @@
   box-sizing: border-box;
 }
 
-#courses_sect .courses_card {
+h1 {
+  font-weight: 700;
+  font-size: 50px;
+}
+
+section {
+  margin: 80px 0;
+}
+section .title_part .sect_title_head {
+  font-family: sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+section .title_part .sect_title_desc {
+  font-size: 16px;
+  font-weight: 200;
+}
+section .btn {
+  display: flex;
+  justify-content: end;
+  margin-top: 40px;
+}
+section .btn button {
+  font-size: 16px;
+  padding: 6px 20px;
+  line-height: 36px;
+  font-weight: 100;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--btn_bg_color);
+}
+
+#banner_sect .bg_banner_img {
+  background-image: url("https://barattson.com/sliders/1715585212.webp");
+  height: 45vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#banner_sect .bg_banner_img .banner_content {
+  width: 50%;
+}
+#banner_sect .bg_banner_img .banner_content .btn_banner {
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--btn_bg_color);
+}
+
+@media only screen and (max-width: 1000px) {
+  #banner_sect .bg_banner_img .banner_content {
+    width: 100%;
+  }
+  #banner_sect .bg_banner_img .banner_content h1 {
+    font-size: 36px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #banner_sect .bg_banner_img {
+    background-image: none;
+  }
+}
+#popular_categories .category_cards_body {
+  background-color: var(--blue);
+  color: #fff;
+  cursor: pointer;
+}
+#popular_categories .category_cards_body .category_title {
+  padding: 20px 20px 12px 20px;
+  height: 100px;
+}
+#popular_categories .category_cards_body .category_title .category_title_text {
+  font-family: sans-serif;
+  font-size: 20px;
+  line-height: 21px;
+}
+#popular_categories .category_cards_body .category_title .redline {
+  width: 50px;
+  height: 5px;
+  background-color: var(--btn_bg_color);
+  transition: width 0.5s;
+}
+#popular_categories .category_cards_body .category_arrow_icon {
+  display: flex;
+  justify-content: end;
+  padding: 20px;
+}
+#popular_categories .category_cards_body .category_arrow_icon i {
+  transition: 0.5s;
+}
+#popular_categories .category_cards_body:hover {
+  background-color: var(--btn_bg_color);
+}
+#popular_categories .category_cards_body:hover .category_title .redline {
+  width: 70px;
+  background-color: #fff;
+}
+#popular_categories .category_cards_body:hover .category_arrow_icon i {
+  rotate: -135deg;
+}
+
+#courses_sect .card_body {
+  width: 100%;
+  height: 100%;
   box-shadow: 0px 10px 15px rgba(8, 14, 28, 0.06);
 }
-#courses_sect .courses_card_img {
+#courses_sect .card_body .card_img {
   width: 100%;
   overflow: hidden;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-#courses_sect .courses_card_img .courses_card_img img {
+#courses_sect .card_body .card_img img {
   width: 100%;
   transition: 0.5s;
 }
-#courses_sect .courses_card_img .courses_card_img img :hover {
+#courses_sect .card_body .card_img img:hover {
   transform: scale(1.1);
   cursor: pointer;
+}
+#courses_sect .card_body .courses_card_content {
+  padding: 17px 20px;
+}
+#courses_sect .card_body .courses_card_content .card_title h3 {
+  line-height: 20px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+:root {
+  --blue: #0a2240;
+  --btn_bg_color: #e31836;
 }
