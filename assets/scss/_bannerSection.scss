@@ -1,4 +1,4 @@
-#banner_sect {
+#banner {
     .bg_banner_img {
       background-image: url("https://barattson.com/sliders/1715585212.webp");
       height: 45vh;
@@ -23,7 +23,7 @@
   }
 
   @media only screen and (max-width: 1000px) {
-    #banner_sect {
+    #banner {
       .bg_banner_img {
         .banner_content {
           width: 100%;
@@ -36,7 +36,7 @@
   }
   
   @media only screen and (max-width: 800px) {
-    #banner_sect {
+    #banner {
       .bg_banner_img {
         background-image: none;
       }
