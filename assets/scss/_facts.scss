@@ -1,0 +1,29 @@
+#facts {
+  .fact_bgImg {
+    min-height: 30vh;
+    background-color: #ffffff63;
+    background-image: url('https://barattson.com/public/image/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    .facts_content{
+        color: #ffff;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h3{
+            font-size: 55px;
+            font-weight: 800;
+        }
+        p{
+            font-size: 20px;
+            font-weight: 200;
+            line-height: 23px;
+        }
+    }
+  }
+}
+
