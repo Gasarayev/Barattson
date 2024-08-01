@@ -155,33 +155,30 @@ section .btn button {
     font-size: 12px;
   }
 }
-.swiper {
+#slider .swiper {
   width: 100%;
   box-shadow: 0px 10px 15px rgba(8, 14, 28, 0.06);
 }
-
-.swiper-slide {
+#slider .swiper-slide {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   box-shadow: 0px 10px 15px rgba(8, 14, 28, 0.06);
 }
-
-.slide_img {
+#slider .slide_img {
   overflow: hidden;
 }
-
-.swiper-slide img {
+#slider .swiper-slide img {
   width: 100%;
   height: auto;
   object-fit: cover;
   transition: 0.5s;
 }
-.swiper-slide img:hover {
+#slider .swiper-slide img:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
-
 #slider .tutor_info {
   text-align: center;
   padding: 16px;
@@ -333,4 +330,56 @@ section .btn button {
   line-height: 26px;
   font-weight: 400;
   margin-bottom: 10px;
+}
+
+#partners img {
+  width: 150px;
+  filter: grayscale(100%);
+}
+#partners img:hover {
+  filter: none;
+}
+
+#feedback {
+  background-color: var(--blue);
+  color: #fff;
+  padding: 100px 0;
+}
+#feedback .swiper-slide {
+  background-color: #fff;
+  color: #000;
+}
+#feedback .swiper-slide .slide_img_feedback {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+#feedback .swiper-slide .slide_img_feedback img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+#feedback .swiper-slide .slide_img_feedback .reviewer_content .reviewer_name {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 21px;
+  margin: 0;
+}
+#feedback .swiper-slide .slide_img_feedback .reviewer_content .reviewer_title {
+  font-size: 14px;
+}
+#feedback .swiper-slide .slide_img_feedback .reviewer_content .reviewer_raiting {
+  display: flex;
+}
+#feedback .swiper-slide .slide_img_feedback .reviewer_content .reviewer_raiting img {
+  width: 20px;
+  height: 20px;
+}
+#feedback .swiper-slide .reviewer_message {
+  padding: 0 20px;
+}
+#feedback .swiper-slide .reviewer_message .message {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
 }

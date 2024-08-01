@@ -1,22 +1,32 @@
-const swiper = new Swiper(".swiper", {
-  direction: "horizontal",
-  loop: true,
-  slidesPerView: 4,
-  spaceBetween: 10,
-//   autoplay: {
-    // delay: 2500,
-    // disableOnInteraction: false,
-//   },
+function createSwiper(selector, slidesPerView) {
+  return new Swiper(selector, {
+    direction: "horizontal",
+    loop: true,
+    slidesPerView: slidesPerView,
+    spaceBetween: 10,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      991: {
+        slidesPerView: slidesPerView,
+      },
+      768: {
+        slidesPerView: slidesPerView - 1,
+      },
+      0: {
+        slidesPerView: slidesPerView - 2,
+      },
+    },
+  });
+}
 
-  breakpoints: {
-    991:{
-      slidesPerView: 4,
-    },
-    768: {
-      slidesPerView: 3,
-    },
-    0: {
-      slidesPerView: 2,
-    },
-  },
+document.addEventListener('DOMContentLoaded', () => {
+  if (document.querySelector('.feedback')) {
+    createSwiper('.feedback', 3);
+  }
+  if (document.querySelector('.slider')) {
+    createSwiper('.slider', 4);
+  }
 });

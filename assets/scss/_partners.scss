@@ -1,0 +1,10 @@
+#partners{
+
+    img{
+        width: 150px;
+        filter: grayscale(100%);
+        &:hover{
+            filter: none;
+        }
+    }
+}

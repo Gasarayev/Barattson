@@ -1,0 +1,53 @@
+#feedback {
+  background-color: var(--blue);
+  color: #fff;
+  padding: 100px 0;
+
+  .swiper-slide {
+    background-color: #fff;
+    color: #000;
+    .slide_img_feedback {
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+      img {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+      }
+
+      .reviewer_content {
+        .reviewer_name {
+          font-size: 17px;
+          font-weight: 600;
+          line-height: 21px;
+          margin: 0;
+        }
+
+        .reviewer_title {
+          font-size: 14px;
+        }
+
+        .reviewer_raiting{
+            display: flex;
+
+            img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+      }
+    }
+
+    .reviewer_message{
+        padding: 0 20px;
+
+        .message{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 32px;
+
+        }
+    }
+  }
+}
