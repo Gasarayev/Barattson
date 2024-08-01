@@ -277,14 +277,13 @@ section .btn button {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  display: flex;
+  align-items: center;
 }
 #facts .fact_bgImg .facts_content {
   color: white;
-  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 #facts .fact_bgImg .facts_content h3 {
   font-size: 55px;
@@ -294,4 +293,16 @@ section .btn button {
   font-size: 20px;
   font-weight: 200;
   line-height: 23px;
+}
+
+@media only screen and (max-width: 768px) {
+  #facts .mobile_gap {
+    display: flex;
+    gap: 40px;
+    padding: 40px 0;
+  }
+  #facts .mobile_gap div {
+    justify-content: center !important;
+    align-items: center;
+  }
 }
