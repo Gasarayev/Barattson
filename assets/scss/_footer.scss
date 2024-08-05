@@ -1,0 +1,132 @@
+#footer {
+  padding: 100px 0;
+  background-color: var(--blue);
+
+  .footer_logo {
+    width: 175px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .footer_text {
+    margin: 0px 0 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    p {
+      color: white;
+      padding: 3rem 0;
+    }
+  }
+
+  .footer_email_send {
+    input {
+      background-color: #0a2240;
+      border: 1px solid white;
+      padding: 15px;
+      width: 250px;
+      height: 50px;
+      margin: 0;
+      &::placeholder {
+        color: #fff;
+      }
+    }
+
+    button {
+      background-color: white;
+      color: #0a2240;
+      padding: 13px 29px;
+      border: none;
+      margin-left: -5px;
+    }
+  }
+
+  .footer_title {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 19px;
+    color: white;
+  }
+
+  .footer_list {
+    ul {
+      list-style: none;
+      width: 200px;
+      li {
+        font-size: 14px;
+        font-weight: 200;
+        line-height: 16px;
+        color: white;
+        cursor: pointer;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  hr {
+    color: white;
+    margin: 70px 0 20px 0;
+  }
+
+  .all_rights {
+    color: white;
+    padding: 1rem;
+  }
+
+  .footer_bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .footer_bottom_link {
+      ul {
+        display: flex;
+        margin-bottom: 0;
+        padding: 0;
+        gap: 80px;
+        list-style: none;
+        color: #fff;
+        li {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .footer_bottom_sosial {
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+        margin: 0;
+        list-style: none;
+        li{
+
+            a{
+                color: #fff;
+                i{
+                    font-size: 22px;
+                }
+            }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 601px) {
+  #footer {
+    .footer_email_send {
+      input {
+        width: 200px;
+      }
+    }
+
+    .mobile_vers {
+      display: none !important;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+#vacancy {
+  background-color: var(--blue);
+  color: #fff;
+  padding: 30px 30px 80px 30px;
+  position: relative;
+  
+  .swiper-container_vacancy {
+    width: 100%;
+    min-height: 200px;
+    .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: #153761;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+
+      .vacancy_content {
+        color: #fff;
+        text-align: start;
+        p {
+          font-size: 14px;
+          color: #faf0f0;
+        }
+      }
+
+      .vacancy_btn {
+        button {
+          background-color: white;
+          border: none;
+          padding: 6px 18px;
+          color: black;
+        }
+      }
+    }
+  }
+
+  .img_chair {
+    position: absolute;
+    right: 0;
+    top: -50px;
+
+    img {
+      width: 560px;
+    }
+  }
+}
+
+
+@media (max-width: 767px) {
+  #vacancy{
+    .img_chair{
+      display: none;
+    }
+  
+    .swiper-slide{
+      width: 354px;
+
+      .vacancy_content {
+        p {
+          width: 99%;
+        }
+      }
+    }
+  }
+
+}
