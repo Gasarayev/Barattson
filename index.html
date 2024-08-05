@@ -19,6 +19,147 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <header id="header">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-4">
+            <div class="header_logo">
+              <img
+                src="https://barattson.com/back/dist/img/logo-favicon/1697923827_53375_larablog_logo.png"
+                alt="Barattson-Logo"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-8 d-flex align-items-center justify-content-end">
+            <div class="header_menu">
+              <ul class="d-flex align-items-center">
+                <li>Kateqoriyalar</li>
+                <li>Kurslar</li>
+                <li>Müəllimlər</li>
+                <li>İmtahanlar</li>
+                <li>Haqımızda</li>
+                <li>Əlaqə</li>
+                <li>
+                  <div class="dropdown dropdown_style">
+                    <button
+                      class="btn dropdown-toggle"
+                      type="button"
+                      id="dropdownMenuButton"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Az
+                    </button>
+                    <div class="dropdown-menu dropdown_style_menu">
+                      <a class="dropdown-item" href="#">En</a>
+                      <a class="dropdown-item" href="#">Ru</a>
+                      <a class="dropdown-item" href="#">Ar</a>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="header_button">
+                  <button>Müraciət et</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="header_mobile">
+      <div class="container">
+        <div class="row">
+          <div class="mobile_menu">
+            <div class="mobile_logo">
+              <img
+                src="https://barattson.com/back/dist/img/logo-favicon/1697923827_53375_larablog_logo.png"
+                alt="mobile_logo"
+              />
+            </div>
+
+            <div class="menu_burger">
+              <div class="apply_menu">
+                <button>Müraciət et</button>
+              </div>
+
+              <div class="burgermenu_mobile">
+                <div id="mySidenav" class="sidenav">
+                  <div class="container">
+                    <div
+                      class="row d-flex align-item-center justify-content-between pr-5 pt-2"
+                    >
+                      <div class="logo_burgerMenu">
+                        <img
+                          src="https://barattson.com/back/dist/img/logo-favicon/1697923827_53375_larablog_logo.png"
+                          alt=""
+                        />
+                      </div>
+
+                      <a
+                        href="javascript:void(0)"
+                        class="closebtn"
+                        onclick="closeNav()"
+                        ><i class="fa-solid fa-xmark"></i
+                      ></a>
+                    </div>
+
+                    <div class="row">
+                      <div class="col">
+                        <div class="mobile_menu_body">
+                          <div class="mobile_list">
+                            <ul>
+                              <li>Kateqoriyalar</li>
+                              <li>Kurslar</li>
+                              <li>Müəllimlər</li>
+                              <li>İmtahanlar</li>
+                              <li>Haqımızda</li>
+                              <li>Əlaqə</li>
+                              <li>
+                                <div class="dropdown dropdown_style">
+                                  <button
+                                    class="btn dropdown-toggle"
+                                    type="button"
+                                    id="dropdownMenuButton"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                  >
+                                    Az
+                                  </button>
+                                  <div
+                                    class="dropdown-menu dropdown_style_menu"
+                                  >
+                                    <a class="dropdown-item" href="#">En</a>
+                                    <a class="dropdown-item" href="#">Ru</a>
+                                    <a class="dropdown-item" href="#">Ar</a>
+                                  </div>
+                                </div>
+                              </li>
+
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <span
+                  style="font-size: 30px; cursor: pointer"
+                  onclick="openNav()"
+                  >&#9776;</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="banner">
       <div class="container">
         <div class="row">
@@ -1007,7 +1148,7 @@
 
         <div class="row">
           <p class="all_rights">All RIGHTS RESERVED</p>
-          <div class="footer_bottom" >
+          <div class="footer_bottom">
             <div class="col-md-8">
               <div class="footer_bottom_link">
                 <ul>
@@ -1054,6 +1195,9 @@
         </div>
       </div>
     </footer>
+
+    <!-- navber mobile -->
+    <script src="./assets/script/burger_menu.js"></script>
 
     <!-- facts_count -->
     <script src="./assets/script/facts_count.js"></script>

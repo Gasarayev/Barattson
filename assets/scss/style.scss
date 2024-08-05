@@ -16,8 +16,12 @@ h1 {
     font-size: 50px;
 }
 
+ul{
+  list-style: none;
+}
+
 section {
-  margin: 80px 0;
+  margin: 76px 0;
 
   .title_part {
     .sect_title_head {
@@ -49,6 +53,13 @@ section {
   }
 }
 
+@media screen and (max-width: 991px) {
+ section{
+  margin: 46px 0
+ }
+}
+
+@import "./header";
 @import "./bannerSection";
 @import "./popularCategories.scss";
 @import "./courses";

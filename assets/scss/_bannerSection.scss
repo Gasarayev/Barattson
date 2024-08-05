@@ -2,7 +2,7 @@
     .bg_banner_img {
       background-image: url("https://barattson.com/sliders/1715585212.webp");
       height: 45vh;
-      background-position: center;
+      background-position: right;
       background-repeat: no-repeat;
       background-size: contain;
       display: flex;
@@ -25,6 +25,7 @@
   @media only screen and (max-width: 1000px) {
     #banner {
       .bg_banner_img {
+        height: inherit;
         .banner_content {
           width: 100%;
           h1 {
@@ -35,7 +36,7 @@
     }
   }
   
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 767px) {
     #banner {
       .bg_banner_img {
         background-image: none;

@@ -1,0 +1,158 @@
+#header_mobile {
+  display: none;
+}
+
+#header {
+  z-index: 999;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  top: 0;
+  .header_logo {
+    height: 40px;
+    img {
+      height: 100%;
+    }
+  }
+
+  .header_menu ul {
+    margin: 1rem 0;
+
+    li {
+      padding: 0 12px;
+      cursor: pointer;
+
+      .dropdown_style {
+        background-color: white;
+
+        .dropdown-toggle:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+
+      .dropdown_style_menu {
+        min-width: 0;
+        .dropdown-item:focus {
+          background-color: white;
+        }
+      }
+    }
+
+    .header_button {
+      button {
+        width: 130px;
+        color: white;
+        border-radius: 5px;
+        padding: 10px 20px;
+        background-color: #e31836;
+        border: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #header {
+    display: none;
+  }
+
+  #header_mobile {
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+    .mobile_menu {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      margin: 0;
+      .mobile_logo {
+        width: 115px;
+        img {
+          width: 100%;
+        }
+      }
+
+      .menu_burger {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0px 10px 20px;
+        margin: 0;
+        gap: 15px;
+
+        .apply_menu {
+          button {
+            background-color: #e31836;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 10px;
+          }
+        }
+
+        .burgermenu_mobile {
+          .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-color: #fff;
+            overflow-x: hidden;
+            transition: 0.5s;
+
+            a {
+              padding: 8px 8px 8px 32px;
+              text-decoration: none;
+              font-size: 25px;
+              color: #818181;
+              display: block;
+              transition: 0.3s;
+
+              &:hover {
+                color: #000;
+              }
+            }
+
+            .logo_burgerMenu {
+              width: 115px;
+              display: flex;
+              align-items: center;
+
+              img {
+                width: 100%;
+              }
+            }
+
+            .closebtn {
+              color: #000;
+              i {
+                font-size: 28px;
+              }
+            }
+
+            .mobile_menu_body{
+                
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
