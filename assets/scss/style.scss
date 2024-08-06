@@ -20,6 +20,15 @@ ul{
   list-style: none;
 }
 
+a{
+  color: #212529;
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+    color: #212529;
+  }
+}
+
 section {
   margin: 76px 0;
 
@@ -72,3 +81,4 @@ section {
 @import "./feedback";
 @import "./vacancy";
 @import "./footer";
+@import "./aboutPage-category";

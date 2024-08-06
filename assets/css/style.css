@@ -18,6 +18,15 @@ ul {
   list-style: none;
 }
 
+a {
+  color: #212529;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: #212529;
+}
+
 section {
   margin: 76px 0;
 }
@@ -729,4 +738,19 @@ section .btn button {
   .footer_bottom_sosial ul {
     justify-content: center !important;
   }
+}
+#about .about_category .about_btn {
+  background-color: rgb(243, 243, 243);
+  padding: 20px;
+  text-align: center;
+  color: #0d223f;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #d7d7d7;
+  width: 100%;
+  transition: background-color 0.3s, color 0.3s;
+}
+#about .about_category .btn_active {
+  background-color: #0d223f;
 }
