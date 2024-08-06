@@ -148,7 +148,7 @@ section .btn button {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 999;
     top: 0;
     right: 0;
     background-color: #fff;
@@ -179,6 +179,40 @@ section .btn button {
   }
   #header_mobile .mobile_menu .menu_burger .burgermenu_mobile .sidenav .closebtn i {
     font-size: 28px;
+  }
+  #header_mobile .mobile_menu .menu_burger .burgermenu_mobile .sidenav .mobile_menu_body {
+    text-align: center;
+  }
+  #header_mobile .mobile_menu .menu_burger .burgermenu_mobile .sidenav .mobile_menu_body .mobile_menu_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #header_mobile .mobile_menu .menu_burger .burgermenu_mobile .sidenav .mobile_menu_body .mobile_menu_list .list_menu {
+    width: 100%;
+    border-bottom: 1px solid #c1c1c1;
+    line-height: 55px;
+    cursor: pointer;
+  }
+  #header_mobile .mobile_menu .menu_burger .burgermenu_mobile .sidenav .mobile_menu_body .mobile_menu_list .mobile_icon .mobile_icon_menu {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+  }
+  #header_mobile .mobile_menu .menu_burger .burgermenu_mobile .sidenav .mobile_menu_body .mobile_menu_list .mobile_icon .mobile_icon_menu a {
+    color: #000;
+  }
+  #header_mobile .mobile_menu .menu_burger .burgermenu_mobile .sidenav .mobile_menu_body .mobile_menu_list .mobile_dropdown .dropdown_style_menu {
+    min-width: 3em;
+    text-align: center;
+  }
+  #header_mobile .mobile_menu .menu_burger .burgermenu_mobile .sidenav .mobile_menu_body .mobile_menu_list .mobile_dropdown .dropdown_style_menu a {
+    padding: 0;
+    font-size: 16px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+    padding-bottom: 8px;
   }
 }
 #banner .bg_banner_img {
@@ -381,10 +415,7 @@ section .btn button {
 
 @media only screen and (max-width: 1200px) {
   #youtube .ytb_img {
-    height: 100%;
-  }
-  #youtube .ytb_img img {
-    height: 100%;
+    display: none;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -474,6 +505,18 @@ section .btn button {
   margin-bottom: 10px;
 }
 
+@media only screen and (max-width: 991px) {
+  #news .box_shadow .news_body .news_title {
+    height: 200px;
+    padding: 7px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #news .box_shadow .news_body .news_title {
+    height: 180px;
+    padding: 10px;
+  }
+}
 #partners img {
   width: 150px;
   filter: grayscale(100%);

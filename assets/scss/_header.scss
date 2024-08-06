@@ -109,7 +109,7 @@
             height: 100%;
             width: 0;
             position: fixed;
-            z-index: 1;
+            z-index: 999;
             top: 0;
             right: 0;
             background-color: #fff;
@@ -146,10 +146,48 @@
               }
             }
 
-            .mobile_menu_body{
-                
-            }
+            .mobile_menu_body {
+              text-align: center;
+              .mobile_menu_list {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
 
+                .list_menu {
+                  width: 100%;
+                  border-bottom: 1px solid #c1c1c1;
+                  line-height: 55px;
+                  cursor: pointer;
+                }
+                .mobile_icon {
+                  .mobile_icon_menu {
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 5px;
+                    a {
+                      color: #000;
+                    }
+                  }
+                }
+
+                .mobile_dropdown {
+                  .dropdown_style_menu {
+
+                    min-width: 3em;
+                    text-align: center;
+
+                    a {
+                      padding: 0;
+                      font-size: 16px;
+                      color: #000;
+                      display: block;
+                      transition: 0.3s;
+                      padding-bottom: 8px;
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
