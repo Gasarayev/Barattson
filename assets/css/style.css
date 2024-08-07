@@ -753,4 +753,11 @@ section .btn button {
 }
 #about .about_category .btn_active {
   background-color: #0d223f;
+  color: white;
+}
+#about .allPart {
+  display: inline-block;
+}
+#about .allPartNone {
+  display: none;
 }
