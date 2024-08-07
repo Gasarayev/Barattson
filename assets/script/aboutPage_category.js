@@ -12,12 +12,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     console.log(Array.from(sections)[0])
     
-    if (buttons.length > 0 && sections.length > 0) {
+    
       Array.from(buttons)[0].classList.add("btn_active");
       Array.from(sections)[0].classList.remove("allPartNone");
       Array.from(sections)[0].classList.add("allPart");
 
-    }
+    
   
 
     Array.from(buttons).forEach((button, index) => {
